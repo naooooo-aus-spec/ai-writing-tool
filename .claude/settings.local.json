@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Test-Path \".env\"; python --version)",
+      "PowerShell(streamlit run *)",
+      "PowerShell(Get-ChildItem *)",
+      "Skill(artifact-design)",
+      "PowerShell(python -c \"import streamlit as st; from streamlit import file_util; print\\(file_util.get_streamlit_file_path\\('credentials.toml'\\)\\)\")",
+      "PowerShell(python -c \"import google.genai.errors as e; print\\([x for x in dir\\(e\\) if not x.startswith\\('_'\\)]\\)\")",
+      "PowerShell(gh auth *)"
+    ]
+  }
+}
